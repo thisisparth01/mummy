@@ -1,0 +1,259 @@
+# product name, price, quantity, grams/litres, margin, discount, high discount, courier, total, stock
+
+class items:
+    def __init__(self, name, quantity, pieces, discount=0, price=0):
+
+        # common attributes
+        self.name = name
+        self.quantity = quantity
+        self.pieces = pieces
+        self.discount = discount
+        self.price = price 
+        
+    def final(self):
+        return int(self.price*self.pieces*(self.quantity/self.basic)   -  self.price*self.pieces*(self.quantity/self.basic)*(self.discount/100))+1
+        
+    def honey(self):
+        product = honey
+        
+        product.basic=1000
+        product.price = 450
+        product.original = 400
+        product.stock = 3000
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'grams  Stock Left:',product.stockLeft,'grams')
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+
+        
+    def girGauArk(self):
+        
+        product = girGauArk
+        
+        product.price = 35
+        product.original = 30
+        product.basic = 1000
+        product.stock = 3000
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'grams  Stock Left:',product.stockLeft,'grams')
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+
+    def nasyaBindu(self):
+        product = nasyaBindu
+        product.price = 130
+        product.original = 105
+        product.basic = 10    
+        product.stock = 30
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'ml  Stock Left:',product.stockLeft,'ml')
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+        
+    def netraJyoti(self):
+        
+        product = netraJyoti
+        
+        product.price = 110
+        product.original = 85
+        product.basic = 10    
+        product.stock = 30
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'ml  Stock Left:',product.stockLeft,'ml')
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+        
+    def kapoor(self):
+        
+        product = kapoor
+        
+        product.price = 115
+        product.original = 100
+        product.basic = 50    
+        product.stock = 150
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'grams  Stock Left:',product.stockLeft,'grams')
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+        
+    def karnaDrop(self):
+        
+        product = karnaDrop
+        
+        product.price = 110
+        product.original = 85
+        product.basic = 10    
+        product.stock = 30
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'ml  Stock Left:',product.stockLeft,'ml')
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+        
+    def dantManjan(self):
+        
+        product = dantManjan
+        
+        product.price = 130
+        product.original = 110
+        product.basic = 80    
+        product.stock = 240
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'grams  Stock Left:',product.stockLeft,'grams')
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+        
+    def havanSamagri(self):
+        
+        product = havanSamagri
+
+        product.price = 85
+        product.original = 65
+        product.basic = 250    
+        product.stock = 250
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'grams  Stock Left:',product.stockLeft,'grams')
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+        
+    def agarbatti(self):
+        
+        product = agarbatti
+        
+        product.price = 30
+        product.original = 24
+        product.basic = 50    
+        product.stock = 150
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'grams  Stock Left:',product.stockLeft,'grams')
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+        
+    def skinCream(self):
+        
+        product = skinCream
+        
+        product.price = 210
+        product.original = 170
+        product.basic = 60    
+        product.stock = 60
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'grams  Stock Left:',product.stockLeft,'grams')
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+        
+    def hairTonic(self):
+        
+        product = hairTonic
+        
+        product.price = 160
+        product.original = 150
+        product.basic = 100    
+        product.stock = 100
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'grams  Stock Left:',product.stockLeft,'grams')
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+        
+    def dhoopSticks(self):
+        
+        product = dhoopSticks
+        
+        product.price = 50
+        product.original = 40
+        product.basic = 1    
+        product.stock = 4
+        product.stockLeft = product.stock - (self.pieces*product.quantity)
+        
+        print('\nName of product: ',self.name)
+        print('Selling Price: ',product.final(),' (discounted rate:)',self.discount,'%')
+        print('Original Price: ',product.original*self.pieces*(self.quantity/self.basic))
+        print('Stock now:',product.stock,'Stock Left:',product.stockLeft)
+        print('Margin Left:',product.final()-(product.original*self.pieces*(self.quantity/self.basic)))
+        
+    
+
+# User Interections
+            
+products = ['Honey', 'Gir Gau Ark' ,'Nasya Bindu' , 'Netra Jyoti','Karna Drop' ,'Kapoor' ,'Dant Manjan' ,'Hair Tonic' ,'Skin Cream' ,'Agarbatti' ,'Dhoop Sticks','Havan Samagri','Gau Pheny']
+print('\n',products)
+
+in_name = input("\nProduct name (List format): ")
+in_quantity = int(input('Enter Quantity (litres/grams): '))
+in_pieces = int(input('Enter pieces: '))
+in_discount = int(input('Enter Discount Percentage: '))
+
+# Final Call
+
+if in_name == 'Honey': 
+    honey = items(in_name,in_quantity,in_pieces,in_discount) ; honey.honey()
+    
+if in_name == 'Gir Gau Ark': 
+    girGauArk = items(in_name,in_quantity,in_pieces,in_discount) ; girGauArk.girGauArk()
+    
+if in_name == 'Nasya Bindu': 
+    nasyaBindu = items(in_name,in_quantity,in_pieces,in_discount) ; nasyaBindu.nasyaBindu()
+    
+if in_name == 'Netra Jyoti': 
+    netraJyoti = items(in_name,in_quantity,in_pieces,in_discount) ; netraJyoti.netraJyoti()
+    
+if in_name == 'Karna Drop': 
+    karnaDrop = items(in_name,in_quantity,in_pieces,in_discount) ; karnaDrop.karnaDrop()
+    
+if in_name == 'Kapoor': 
+    kapoor = items(in_name,in_quantity,in_pieces,in_discount) ; kapoor.kapoor()
+    
+if in_name == 'Dant Manjan': 
+    dantManjan = items(in_name,in_quantity,in_pieces,in_discount) ; dantManjan.dantManjan()
+    
+if in_name == 'Hair Tonic': 
+    hairTonic = items(in_name,in_quantity,in_pieces,in_discount) ; hairTonic.hairTonic()
+    
+if in_name == 'Skin Cream': 
+    skinCream = items(in_name,in_quantity,in_pieces,in_discount) ; skinCream.skinCream()
+    
+if in_name == 'Agarbatti': 
+    agarbatti = items(in_name,in_quantity,in_pieces,in_discount) ; agarbatti.agarbatti()
+    
+if in_name == 'Dhoop Sticks': 
+    dhoopSticks = items(in_name,in_quantity,in_pieces,in_discount) ; dhoopSticks.dhoopSticks()
+    
+if in_name == 'Havan Samagri': 
+    havanSamagri = items(in_name,in_quantity,in_pieces,in_discount) ; havanSamagri.havanSamagri()
+    
+if in_name == 'Gau Pheny': 
+    gauPheny = items(in_name,in_quantity,in_pieces,in_discount) ; gauPheny.gauPheny()
+
+
