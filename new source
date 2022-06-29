@@ -1,0 +1,18 @@
+from colors import *
+def printi(name, quantity, pieces, discount, price=0,basic=0,original=0,stock=0):print('\nName of product: ',name); stockLeft = stock - (pieces*quantity);printc('Selling Price: '+str(price*pieces*(quantity/basic) - price*pieces*(quantity/basic)*(discount/100))+' (discount: '+str(discount)+'% )',Fore.BLUE); print('Original Price: ',original*pieces*(quantity/basic));print('Stock now:',stock,'grams  Stock Left:',stockLeft,'grams'); printc('Margin Left: '+str(int(int(price*pieces*(quantity/basic)   -  price*pieces*(quantity/basic)*(discount/100))-(original*pieces*(quantity/basic))))+'\n',Fore.YELLOW)    
+while True: 
+    products = ['Honey','Gir Gau Ark','Nasya Bindu','Netra Jyoti','Karna Drop','Kapoor','Dant Manjan','Hair Tonic','Skin Cream','Agarbatti','Dhoop Sticks','Havan Samagri','Gau Pheny'] ; print('\n',products)
+    n = input("\nProduct name (List format): "); q = int(input('Enter Quantity (litres/grams): ')); p = int(input('Enter pieces: ')); d = int(input('Enter Discount Percentage: '))
+    if n == 'Honey': printi(n,q,p,d,450,1000,400,3000) 
+    if n == 'Gir Gau Ark': printi(n,q,p,d,35,1000,30,3000)
+    if n == 'Nasya Bindu': printi(n,q,p,d,130,10,105,30)
+    if n == 'Netra Jyoti': printi(n,q,p,d,110,10,85,30)
+    if n == 'Karna Drop': printi(n,q,p,d,110,10,85,30)
+    if n == 'Kapoor': printi(n,q,p,d,115,50,100,150)
+    if n == 'Dant Manjan': printi(n,q,p,d,130,80,110,240)
+    if n == 'Hair Tonic': printi(n,q,p,d,160,100,150,100)
+    if n == 'Skin Cream': printi(n,q,p,d,210,60,170,60)
+    if n == 'Agarbatti': printi(n,q,p,d,30,50,24,150)
+    if n == 'Dhoop Sticks': printi(n,q,p,d,50,1,40,4)
+    if n == 'Havan Samagri': printi(n,q,p,d,85,250,65,250)
+    if n == 'Gau Pheny': pass
